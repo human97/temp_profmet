@@ -1,0 +1,26 @@
+/* popular_goods--slider_arrow */
+
+.popular_goods--slider_arrow {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #FFFFFF no-repeat center;
+
+  @media (max-width: 1023px){
+     display: none;
+  }
+}
+
+.popular_goods--slider_arrow-right {
+  margin: 0 15px 0 0;
+  /* Тень круглая кнопка */
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  background-image: url(../../../profmet/src/assets/img/slider/icons/arrow_right.svg );
+}
+
+.popular_goods--slider_arrow-left {
+  margin: 0 0 0 15px;
+  box-shadow: -2px 2px 12px rgba(0, 0, 0, 0.1);
+  background-image: url(../../../profmet/src/assets/img/slider/icons/arrow_left.svg);
+}

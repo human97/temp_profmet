@@ -1,0 +1,53 @@
+/* popular_goods--icons_wrapper */
+.popular_goods--icons_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 933px;
+}
+@media (max-width: 1023px) {
+  .popular_goods--icons_wrapper {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.popular_goods--icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+@media (max-width: 1023px) {
+  .popular_goods--icon {
+    margin: 5px;
+  }
+}
+.popular_goods--icon img {
+  width: 99px;
+  height: 107px;
+}
+@media (max-width: 1023px) {
+  .popular_goods--icon img {
+    width: 70px;
+    height: 75px;
+  }
+}
+.popular_goods--icon p {
+  text-align: center;
+  /* Regular/14px | 20px */
+  font-family: "SFUIDisplay-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+@media (max-width: 1023px) {
+  .popular_goods--icon p {
+    display: none;
+  }
+}/*# sourceMappingURL=popular_goods--icons_wrapper.css.map */

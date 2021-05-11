@@ -1,0 +1,68 @@
+/* popular_goods--slider_item */
+
+.popular_goods--slider_item {
+  cursor: pointer;
+  width: 220px;
+  height: 335px;
+  padding: 30px 16px 0 16px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 1023px) {
+      width: 154px;
+      height: 259px;
+      padding: 8px 8px 0 8px;
+      margin: 4px;
+  }
+  
+  img {
+      width: 188px;
+      height: 188px;
+
+      @media (max-width: 1023px) {
+          width: 138px;
+          height: 138px;
+      }
+  }
+
+  p {
+      margin: 0;
+  }
+}
+
+.popular_goods--slider_item-offer {
+  font-family: 'SFUIDisplay-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  /* or 167% */
+  letter-spacing: 0.01em;
+  /* Grey-6 */
+  color: #969696;
+}
+
+.popular_goods--slider_item-text {
+  /* Regular/14px | 20px */
+  font-family: 'SFUIDisplay-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.popular_goods--slider_item-price {
+  /* Bold / 14px | 24px */
+  font-family: 'SFUIDisplay-Bold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  letter-spacing: 0.01em;
+  /* Black */
+  color: #1E1E1C;
+}

@@ -1,0 +1,85 @@
+/* career_blocks */
+
+.career_blocks {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.career_blocks--wrapper {
+  margin: 12px 12px 0 12px;
+}
+
+.career_blocks_background {
+  margin: 0 0 16px 0;
+  width: 437px;
+  height: 281px;
+  border-radius: 8px;
+  background: no-repeat center;
+  background-size: cover;
+
+
+  @media (max-width: 1023px) {
+    width: 343px;
+    height: 219px;
+    margin: 0 0 8px 0;
+  }
+
+  @media (max-width: 359px) {
+    min-width: 100%;
+    margin: 0 0 8px 0;
+  }
+}
+
+.career_blocks--job {
+  background-image: url(../images/career_blocks/1.webp);
+
+
+  @media (max-width: 1023px) {
+    background-image: url(../images/career_blocks/mobile/1.webp);
+  }
+}
+
+.career_blocks--lerning {
+  background-image: url(../images/career_blocks/2.webp);
+
+  @media (max-width: 1023px) {
+    background-image: url(../images/career_blocks/mobile/2.webp);
+  }
+}
+
+.career_blocks--students {
+  background-image: url(../images/career_blocks/3.webp);
+
+  @media (max-width: 1023px) {
+    background-image: url(../images/career_blocks/mobile/3.webp);
+  }
+}
+
+.career_blocks--info_title {
+  /* Medium / 20px | 28px */
+  font-family: 'SFUIDisplay-Medium';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.career_blocks--info_link {
+  text-decoration: none;
+  /* Regular / 14px | 24px */
+  font-family: 'SFUIDisplay-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  letter-spacing: 0.01em;
+  /* Gray 2 */
+  color: #4F4F4F;
+}

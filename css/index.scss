@@ -1,0 +1,18 @@
+/* imports */
+@import "blocks/popular_goods";
+@import "blocks/popular_goods--icons_wrapper";
+@import "blocks/popular_goods--slider";
+@import "blocks/popular_goods--slider_item";
+@import "blocks/popular_goods--slider_arrow";
+@import "blocks/footer";
+@import "blocks/career_blocks";
+
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
