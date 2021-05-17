@@ -79,6 +79,7 @@
   margin: 18px 0 0 0;
   cursor: pointer;
   border: none;
+  background: transparent;
   /* Regular / 16px | 24px */
   font-family: "SFUIDisplay-Regular";
   font-style: normal;
