@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/* fonts */
+@import url(../fonts/fonts.css);
+
+
 *,
 *:before,
 *:after {
@@ -7,6 +11,7 @@
   box-sizing: border-box;
   outline: none;
 }
+
 
 /* imports */
 /* popular_goods */
