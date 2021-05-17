@@ -608,6 +608,7 @@
   align-items: center;
   border: none;
   cursor: pointer;
+  background: transparent;
 }
 .filters--hide_all_filters_btn .hide_all_filters_btn--arrow {
   width: 8px;
@@ -638,10 +639,11 @@
 }
 
 .filter_checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
 .filter_checkbox_label {
