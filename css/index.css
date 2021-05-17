@@ -1,8 +1,4 @@
 @charset "UTF-8";
-/* fonts */
-@import url(../fonts/fonts.css);
-
-
 *,
 *:before,
 *:after {
@@ -11,7 +7,6 @@
   box-sizing: border-box;
   outline: none;
 }
-
 
 /* imports */
 /* popular_goods */
@@ -608,18 +603,23 @@
 }
 
 /* filter */
-.filter_wrapper {
-  position: relative;
+.filters--hide_all_filters_btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+.filters--hide_all_filters_btn .hide_all_filters_btn--arrow {
+  width: 8px;
+  height: 4px;
 }
 
-.filter_checkbox {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  position: absolute;
+.btn--arrow_rotate {
+  transform: rotateZ(180deg);
 }
 
 .filters_title {
+  margin: 0 16px 0 0;
   /* Medium / 16px | 22px */
   font-family: "SFUIDisplay-Medium";
   font-style: normal;
@@ -632,6 +632,18 @@
   color: #000;
 }
 
+.filter_wrapper {
+  position: relative;
+  margin: 20px 0 0 0;
+}
+
+.filter_checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
 .filter_checkbox_label {
   padding: 0 0 0 32px;
   /* Regular / 16px | 24px */
@@ -639,7 +651,6 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 24px;
   /* identical to box height, or 150% */
   letter-spacing: 0.01em;
   /* Black */
@@ -647,9 +658,7 @@
   cursor: pointer;
 }
 
-.filter_checkbox_label:before {
-  content: "";
-  display: block;
+.filter_checkbox_checked {
   width: 20px;
   height: 20px;
   /* White */
@@ -661,37 +670,29 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
 }
 
-.filter_checkbox_label:after {
-  content: "";
-  display: block;
-  width: 12.5px;
-  height: 8.75px;
-  background: url(../images/filter/checkbox_checked.svg) no-repeat;
-  background-size: 12.5px 8.75px;
-  opacity: 0;
-  position: absolute;
-  top: 5.75px;
-  left: 3.75px;
-  z-index: 2;
-}
-
-.filter_checkbox:checked + .filter_checkbox_label:before {
-  background: #E32F37;
-}
-
-.filter_checkbox:checked + .filter_checkbox_label:after {
-  opacity: 1;
+.filter_checkbox:checked + .filter_checkbox_checked {
+  background: #E32F37 url(../images/filter/checkbox_checked.svg) no-repeat;
+  border: none;
 }
 
 .filters--show_more {
-  font-family: sans-serif;
+  margin: 18px 0 0 0;
   cursor: pointer;
-  color: red;
+  border: none;
+  /* Regular / 16px | 24px */
+  font-family: "SFUIDisplay-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  letter-spacing: 0.01em;
+  /* Red */
+  color: #E32F37;
 }
 
-.hidden {
+.hidden_filters {
   display: none;
 }/*# sourceMappingURL=index.css.map */
