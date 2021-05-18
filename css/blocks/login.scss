@@ -1,0 +1,170 @@
+/* login */
+
+.form_login {
+  display: flex;
+  flex-direction: column;
+  width: 446px;
+
+
+  /* inputs log, pass */
+  input[type=text],
+  input[type=password] {
+    height: 48px;
+    padding: 0 0 0 16px;
+    /* Gray 5 */
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    /* Regular / 14px | 24px */
+    font-family: 'SFUIDisplay-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    /* Black */
+    color: #1E1E1C;
+
+
+    &::placeholder {
+      /* Regular / 14px | 24px */
+      font-family: 'SFUIDisplay-Regular';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      /* identical to box height, or 171% */
+      letter-spacing: 0.01em;
+      color: #BDBDBD;
+    }
+  }
+
+
+  .form_login--title {
+    /* Medium / 24px | 32px */
+    font-family: 'SFUIDisplay-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+    letter-spacing: 0.01em;
+    color: #000000;
+  }
+
+
+
+  /* submit */
+  input[type=submit] {
+    height: 48px;
+    cursor: pointer;
+    background: #E32F37;
+    border: none;
+    border-radius: 5px;
+    /* Medium / 16px | 22px */
+    font-family: 'SFUIDisplay-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    /* White */
+    color: #FFFFFF;
+
+    &:hover {
+      background: #F34F56;
+    }
+  }
+}
+
+
+.form_login--checkbox_forgot_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 18px 0 0 0;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+
+
+/* checkbox */
+.form_login--checkbox_wrapper {
+  position: relative;
+}
+
+.form_login--checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.form_login--checkbox_label {
+  padding: 0 0 0 30px;
+  /* Regular / 14px | 24px */
+  font-family: 'SFUIDisplay-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  /* Black */
+  color: #000;
+  cursor: pointer;
+}
+
+.form_login--checkbox_checked {
+  width: 20px;
+  height: 20px;
+  /* White */
+  background: #fff;
+  /* Grey */
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.form_login--checkbox:checked+.form_login--checkbox_checked {
+  background: url(../images/icons/checkbox_checked.svg) no-repeat;
+  border: none;
+}
+
+
+.form_login--forgot_password_link {
+  text-decoration: none;
+  padding: 0 10px 0 0;
+  /* Regular / 14px | 24px */
+  font-family: 'SFUIDisplay-Regular';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  /* Black */
+  color: #000;
+}
+
+
+.form_login--register_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 48px;
+  border: 1px solid #969696;
+  box-sizing: border-box;
+  border-radius: 5px;
+  /* Medium / 16px | 22px */
+  font-family: 'SFUIDisplay-Medium';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  /* Black */
+  color: #1E1E1C;
+}

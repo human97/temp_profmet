@@ -6,7 +6,8 @@
   cursor: pointer;
   background: transparent;
 }
-.filters--hide_all_filters_btn .hide_all_filters_btn--arrow {
+
+.hide_all_filters_btn--arrow {
   width: 8px;
   height: 4px;
 }
@@ -71,7 +72,7 @@
 }
 
 .filter_checkbox:checked + .filter_checkbox_checked {
-  background: #E32F37 url(../images/filter/checkbox_checked.svg) no-repeat;
+  background: url(../images/icons/checkbox_checked.svg) no-repeat;
   border: none;
 }
 
