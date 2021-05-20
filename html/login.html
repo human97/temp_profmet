@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
   <link rel="stylesheet" href="../fonts/fonts.css">
-  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/blocks/login.css">
 </head>
 
 <body>
@@ -18,9 +18,24 @@
 
       <h2 class="form_login--title">Войдите в свой аккаунт</h2>
 
-      <input type="text" name="" id="" placeholder="Эл. почта или телефон">
-      <input type="password" name="" id="" placeholder="Пароль">
+
+      <div class="form_login--input_wrapper">
+        <label class="form_login--input_label" for="form_login--input_mail">Эл. почта или телефон</label>
+        <input class="form_login--input_mail" type="text" id="form_login--input_mail"
+          placeholder="Эл. почта или телефон">
+      </div>
+      <!-- /.form_login--input_wrapper -->
+
+
+      <div class="form_login--input_wrapper">
+        <label class="form_login--input_label" for="form_login--input_password">Пароль</label>
+        <input class="form_login--input_password" type="text" id="form_login--input_password" placeholder="Пароль">
+      </div>
+      <!-- /.form_login--input_wrapper -->
+
+
       <input type="submit" value="Войти">
+
 
       <div class="form_login--checkbox_forgot_wrapper">
 
@@ -44,6 +59,9 @@
 
     </form>
     <!-- /.form_login -->
+
+    <div class="black_line"></div>
+
   </section>
   <!-- /.form_login_wrapper -->
 
