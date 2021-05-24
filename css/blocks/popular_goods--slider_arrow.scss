@@ -1,6 +1,9 @@
 /* popular_goods--slider_arrow */
 
 .popular_goods--slider_arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 99;
   cursor: pointer;
   width: 40px;
   height: 40px;
@@ -13,14 +16,16 @@
 }
 
 .popular_goods--slider_arrow-right {
+  right: -65px;
   margin: 0 15px 0 0;
   /* Тень круглая кнопка */
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-  background-image: url(../../../profmet/src/assets/img/slider/icons/arrow_right.svg );
+  background-image: url(../../images/slider/icons/arrow_right.svg );
 }
 
 .popular_goods--slider_arrow-left {
+  left: -65px;
   margin: 0 0 0 15px;
   box-shadow: -2px 2px 12px rgba(0, 0, 0, 0.1);
-  background-image: url(../../../profmet/src/assets/img/slider/icons/arrow_left.svg);
+  background-image: url(../../images/slider/icons/arrow_left.svg);
 }

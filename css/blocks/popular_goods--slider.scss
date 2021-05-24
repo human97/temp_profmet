@@ -1,13 +1,20 @@
-/* popular_goods--slider */
+.popular_goods--slider_wrapper {
+  position: relative;
+
+  @media (max-width: 1023px) {
+     width: 100%;
+ }
+}
 
 .popular_goods--slider {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1284px;
-  overflow: hidden;
 
-  @media (max-width: 1270px) {
-      width: 100%;
-  }
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 1154px;
+ overflow: hidden;
+
+ @media (max-width: 1270px) {
+     width: 100%;
+ }
 }

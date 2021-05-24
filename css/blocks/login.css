@@ -236,6 +236,9 @@ input[type=submit]:hover {
   /* Black */
   color: #000;
 }
+.form_login--forgot_password_link:hover {
+  color: #E32F37;
+}
 
 .form_login--register_link {
   display: flex;

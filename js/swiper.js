@@ -1,11 +1,12 @@
-const swiper = new Swiper('.swaper-container', {
+const swiper = new Swiper('.swaper-container', 
+{
   slidesPerView: 1,
   spaceBetween: 10,
 
   breakpoints: {
     320: {
       slidesPerView: 2,
-      spaceBetween: 10,
+      spaceBetween: 5,
     },
     640: {
       slidesPerView: 3,

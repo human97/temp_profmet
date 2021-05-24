@@ -56,6 +56,7 @@
 }
 
 .popular_goods--icon {
+  width: 167px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,6 +65,7 @@
 @media (max-width: 1023px) {
   .popular_goods--icon {
     margin: 5px;
+    width: auto;
   }
 }
 .popular_goods--icon img {
@@ -95,12 +97,20 @@
   }
 }
 
-/* popular_goods--slider */
+.popular_goods--slider_wrapper {
+  position: relative;
+}
+@media (max-width: 1023px) {
+  .popular_goods--slider_wrapper {
+    width: 100%;
+  }
+}
+
 .popular_goods--slider {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1284px;
+  width: 1154px;
   overflow: hidden;
 }
 @media (max-width: 1270px) {
@@ -179,6 +189,9 @@
 
 /* popular_goods--slider_arrow */
 .popular_goods--slider_arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 99;
   cursor: pointer;
   width: 40px;
   height: 40px;
@@ -192,16 +205,18 @@
 }
 
 .popular_goods--slider_arrow-right {
+  right: -65px;
   margin: 0 15px 0 0;
   /* Тень круглая кнопка */
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-  background-image: url(../../../profmet/src/assets/img/slider/icons/arrow_right.svg);
+  background-image: url(../../images/slider/icons/arrow_right.svg);
 }
 
 .popular_goods--slider_arrow-left {
+  left: -65px;
   margin: 0 0 0 15px;
   box-shadow: -2px 2px 12px rgba(0, 0, 0, 0.1);
-  background-image: url(../../../profmet/src/assets/img/slider/icons/arrow_left.svg);
+  background-image: url(../../images/slider/icons/arrow_left.svg);
 }
 
 *,
@@ -938,6 +953,9 @@ input[type=submit]:hover {
   letter-spacing: 0.01em;
   /* Black */
   color: #000;
+}
+.form_login--forgot_password_link:hover {
+  color: #E32F37;
 }
 
 .form_login--register_link {

@@ -216,6 +216,11 @@ input[type=submit] {
   letter-spacing: 0.01em;
   /* Black */
   color: #000;
+
+
+  &:hover {
+    color: #E32F37;
+  }
 }
 
 
