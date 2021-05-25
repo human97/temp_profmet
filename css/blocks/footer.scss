@@ -68,19 +68,25 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
     &:after {
       position: absolute;
       right: .3em;
       top: .4em;
-      background: no-repeat 50% 50% / 12px 6px url(../../../static/images/temporary/footer/icons/v.svg);
+      background: no-repeat 50% 50% / 12px 6px url(../../images/footer/icons/v.svg);
       content: '';
       width: 12px;
       height: 6px;
+      transition: transform 1s;
     }
 
   }
 
+}
+
+details[open] > summary:after {
+  transform: rotateX(180deg);
 }
 
 .footer--widget-border {

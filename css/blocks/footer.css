@@ -65,10 +65,15 @@
   position: absolute;
   right: 0.3em;
   top: 0.4em;
-  background: no-repeat 50% 50%/12px 6px url(../../../static/images/temporary/footer/icons/v.svg);
+  background: no-repeat 50% 50%/12px 6px url(../../images/footer/icons/v.svg);
   content: "";
   width: 12px;
   height: 6px;
+  transition: transform 1s;
+}
+
+details[open] > summary:after {
+  transform: rotateX(180deg);
 }
 
 @media (max-width: 1023px) {

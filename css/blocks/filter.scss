@@ -15,8 +15,10 @@
 }
 
 .btn--arrow_rotate {
-  transform: rotateZ(180deg);
+  transform: rotateX(180deg);
+  transition: transform 1s;
 }
+
 
 .filters_title {
   margin: 0 16px 0 0;
